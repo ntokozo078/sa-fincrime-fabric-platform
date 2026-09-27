@@ -1,0 +1,32 @@
+.create table live_transactions (
+    transaction_id: string,
+    company_registration_number: string,
+    amount_zar: real,
+    bank_code: string,
+    bank_name: string,
+    transaction_type: string,
+    timestamp: datetime
+)
+
+live_transactions
+| take 10
+
+live_transactions
+| where amount_zar > 100000
+| project timestamp, company_registration_number, amount_zar, bank_name, transaction_type
+| order by timestamp desc
+| take 20
+
+live_transactions
+| where company_registration_number in ("2023/421702/08", "2015/554508/21")
+| project timestamp, company_registration_number, amount_zar, bank_name
+| order by timestamp desc
+| take 20
+
+live_transactions
+| where amount_zar > 50000
+| extend timestamp = todatetime(timestamp)
+| summarize transaction_count = count(), total_amount = sum(amount_zar) 
+  by company_registration_number, bin(timestamp, 1h)
+| where transaction_count > 3
+| order by timestamp desc
