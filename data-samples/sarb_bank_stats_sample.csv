@@ -1,0 +1,41 @@
+BankName,BankCode,Quarter,TotalAssets_Billions_ZAR,CapitalAdequacyRatio_pct,LiquidityCoverageRatio_pct,NonPerformingLoans_pct,ReturnOnEquity_pct
+Absa Bank Limited,ABSA,2024-Q1,815.35,14.58,125.2,2.88,12.37
+Absa Bank Limited,ABSA,2024-Q2,821.5,15.21,116.2,5.48,15.67
+Absa Bank Limited,ABSA,2024-Q3,836.91,13.51,118.8,5.81,15.53
+Absa Bank Limited,ABSA,2024-Q4,609.37,14.26,126.4,4.65,10.29
+Absa Bank Limited,ABSA,2025-Q1,627.11,14.02,137.2,3.28,16.54
+Standard Bank of South Africa Limited,SB,2024-Q1,757.8,14.29,127.8,5.96,10.53
+Standard Bank of South Africa Limited,SB,2024-Q2,919.69,15.16,116.9,6.33,18.16
+Standard Bank of South Africa Limited,SB,2024-Q3,754.77,15.31,133.1,3.14,14.96
+Standard Bank of South Africa Limited,SB,2024-Q4,620.05,15.01,121.0,2.61,16.31
+Standard Bank of South Africa Limited,SB,2025-Q1,897.87,14.16,143.5,4.84,15.4
+FirstRand Bank Limited,FNB,2024-Q1,697.05,14.41,130.5,5.78,19.13
+FirstRand Bank Limited,FNB,2024-Q2,792.16,14.36,122.3,5.74,12.95
+FirstRand Bank Limited,FNB,2024-Q3,794.46,14.5,129.0,5.44,13.93
+FirstRand Bank Limited,FNB,2024-Q4,825.65,13.95,119.0,4.84,15.57
+FirstRand Bank Limited,FNB,2025-Q1,842.88,13.96,141.6,2.64,11.53
+Nedbank Limited,NED,2024-Q1,783.52,14.26,122.1,3.83,13.54
+Nedbank Limited,NED,2024-Q2,789.86,15.04,141.1,3.84,16.41
+Nedbank Limited,NED,2024-Q3,855.23,14.87,126.9,6.09,14.33
+Nedbank Limited,NED,2024-Q4,876.4,13.63,138.8,3.64,17.55
+Nedbank Limited,NED,2025-Q1,853.51,14.39,138.3,2.55,11.64
+Capitec Bank Limited,CAP,2024-Q1,219.73,14.79,123.6,3.36,10.21
+Capitec Bank Limited,CAP,2024-Q2,260.01,15.59,128.4,3.07,15.82
+Capitec Bank Limited,CAP,2024-Q3,200.01,14.95,139.8,2.86,14.0
+Capitec Bank Limited,CAP,2024-Q4,218.68,14.93,136.5,5.98,17.14
+Capitec Bank Limited,CAP,2025-Q1,273.41,14.24,118.1,3.72,14.38
+Investec Bank Limited,INV,2024-Q1,81.09,15.09,119.9,2.86,12.72
+Investec Bank Limited,INV,2024-Q2,82.12,15.33,143.0,4.06,14.96
+Investec Bank Limited,INV,2024-Q3,64.02,14.65,132.0,5.77,16.06
+Investec Bank Limited,INV,2024-Q4,89.52,12.91,139.7,3.17,11.16
+Investec Bank Limited,INV,2025-Q1,72.98,14.82,118.8,2.76,16.67
+African Bank Limited,AFB,2024-Q1,80.93,13.15,123.6,2.94,14.73
+African Bank Limited,AFB,2024-Q2,46.04,16.49,115.6,3.96,17.9
+African Bank Limited,AFB,2024-Q3,69.44,12.73,125.5,5.59,17.24
+African Bank Limited,AFB,2024-Q4,38.56,15.98,121.8,6.13,15.62
+African Bank Limited,AFB,2025-Q1,84.18,13.72,127.7,3.57,19.67
+Discovery Bank Limited,DIS,2024-Q1,89.27,16.79,115.9,2.61,11.39
+Discovery Bank Limited,DIS,2024-Q2,75.91,12.6,125.6,5.96,14.01
+Discovery Bank Limited,DIS,2024-Q3,84.53,16.27,117.2,4.38,18.24
+Discovery Bank Limited,DIS,2024-Q4,72.83,14.11,118.0,5.98,11.96
+Discovery Bank Limited,DIS,2025-Q1,94.27,13.7,137.3,2.94,13.91

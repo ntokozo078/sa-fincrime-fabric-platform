@@ -1,0 +1,51 @@
+JSE_Code,CompanyName,Sector,SharePrice_ZAR,Market
+AGL,Anglo American Platinum Ltd,Materials,450.5,Main
+BHP,BHP Group Plc,Materials,520.1,Main
+BVT,Bidvest Group Ltd,Industrials,65.2,Main
+CPI,Capitec Bank Holdings Ltd,Financials,1850.0,Main
+DSY,Discovery Ltd,Financials,115.3,Main
+FSR,FirstRand Ltd,Financials,68.4,Main
+IMP,Impala Platinum Holdings Ltd,Materials,110.75,Main
+INL,Investec Ltd,Financials,95.6,Main
+MTN,MTN Group Ltd,Telecommunications,135.2,Main
+NED,Nedbank Group Ltd,Financials,210.4,Main
+NPN,Naspers Ltd,Technology,3100.0,Main
+PRX,Prosus NV,Technology,1050.5,Main
+SBK,Standard Bank Group Ltd,Financials,165.8,Main
+SHP,Shoprite Holdings Ltd,Consumer Goods,245.6,Main
+SLM,Sanlam Ltd,Financials,72.3,Main
+VOD,Vodacom Group Ltd,Telecommunications,145.9,Main
+WHL,Woolworths Holdings Ltd,Consumer Goods,55.4,Main
+GFI,Gold Fields Ltd,Materials,180.2,Main
+ANG,AngloGold Ashanti Ltd,Materials,410.0,Main
+APN,Aspen Pharmacare Holdings Ltd,Health Care,130.5,Main
+ALT00,Alternative Tech 0 Ltd,Technology,26.68,AltX
+ALT01,Alternative Tech 1 Ltd,Technology,47.87,AltX
+ALT02,Alternative Tech 2 Ltd,Industrials,30.44,AltX
+ALT03,Alternative Tech 3 Ltd,Technology,40.03,AltX
+ALT04,Alternative Tech 4 Ltd,Financials,35.62,AltX
+ALT05,Alternative Tech 5 Ltd,Financials,45.46,AltX
+ALT06,Alternative Tech 6 Ltd,Industrials,36.34,AltX
+ALT07,Alternative Tech 7 Ltd,Technology,37.45,AltX
+ALT08,Alternative Tech 8 Ltd,Financials,9.05,AltX
+ALT09,Alternative Tech 9 Ltd,Industrials,29.89,AltX
+ALT10,Alternative Tech 10 Ltd,Financials,47.23,AltX
+ALT11,Alternative Tech 11 Ltd,Financials,6.49,AltX
+ALT12,Alternative Tech 12 Ltd,Financials,31.16,AltX
+ALT13,Alternative Tech 13 Ltd,Financials,11.53,AltX
+ALT14,Alternative Tech 14 Ltd,Technology,5.1,AltX
+ALT15,Alternative Tech 15 Ltd,Industrials,49.17,AltX
+ALT16,Alternative Tech 16 Ltd,Financials,20.66,AltX
+ALT17,Alternative Tech 17 Ltd,Technology,43.93,AltX
+ALT18,Alternative Tech 18 Ltd,Financials,11.47,AltX
+ALT19,Alternative Tech 19 Ltd,Technology,7.5,AltX
+ALT20,Alternative Tech 20 Ltd,Financials,30.18,AltX
+ALT21,Alternative Tech 21 Ltd,Technology,17.28,AltX
+ALT22,Alternative Tech 22 Ltd,Financials,13.86,AltX
+ALT23,Alternative Tech 23 Ltd,Technology,27.89,AltX
+ALT24,Alternative Tech 24 Ltd,Financials,18.9,AltX
+ALT25,Alternative Tech 25 Ltd,Industrials,29.31,AltX
+ALT26,Alternative Tech 26 Ltd,Financials,34.46,AltX
+ALT27,Alternative Tech 27 Ltd,Technology,32.12,AltX
+ALT28,Alternative Tech 28 Ltd,Financials,22.4,AltX
+ALT29,Alternative Tech 29 Ltd,Financials,17.34,AltX
