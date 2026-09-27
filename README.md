@@ -1,4 +1,4 @@
-# 🇿🇦 SA Financial Crime & Fraud Intelligence Platform
+# 🇿 SA Financial Crime & Fraud Intelligence Platform
 
 ## 📌 Business Problem
 South African financial institutions face strict FICA and AML compliance requirements. This project simulates an enterprise-grade compliance pipeline that ingests real SA company data (CIPC), global sanctions lists (OpenSanctions), and market data (JSE/SARB) to calculate entity risk scores and flag suspicious activity.
@@ -8,46 +8,54 @@ South African financial institutions face strict FICA and AML compliance require
 graph TD
     subgraph Data Sources
         A[CIPC Bulk Data]
-        B[OpenSanctions API/JSON]
-        C[JSE & SARB Reports]
-        D[Simulated Live Transactions]
+        B[OpenSanctions API]
+        C[JSE Listings CSV]
+        D[SARB Stats Excel]
+        E[Simulated Transactions]
     end
 
-    subgraph Microsoft Fabric
-        subgraph Lakehouse: FinCrime_Lakehouse
-            subgraph Bronze Layer
-                E[bronze_cipc_companies]
-                F[bronze_sanctions_entities]
-                G[bronze_jse_sarb_data]
-                H[bronze_pipeline_logs]
-            end
-            subgraph Silver Layer
-                I[silver_companies_clean]
-                J[silver_sanctions_exploded]
-                K[silver_market_data]
-            end
-            subgraph Gold Layer
-                L[gold_sanctions_screening]
-                M[gold_company_risk_scores]
-                N[gold_transaction_summary]
-            end
+    subgraph Microsoft Fabric Ingestion
+        F[Data Factory: pl_bronze_cipc_load]
+        G[Data Factory: pl_bronze_sanctions_load]
+        H[Notebook: nb_bronze_jse_sarb_load]
+        I[Eventstream: es_live_transactions]
+    end
+
+    subgraph Lakehouse: FinCrime_Lakehouse
+        subgraph Bronze Layer - Raw
+            J[bronze_cipc_companies]
+            K[bronze_sanctions_entities]
+            L[bronze_jse_listings]
+            M[bronze_sarb_stats]
+            N[bronze_pipeline_logs]
         end
         
-        subgraph Real-Time Streaming
-            O[Fabric Eventstream] --> P[KQL Database: live_transactions]
+        subgraph Silver Layer - Cleaned
+            O[silver_companies]
+            P[silver_sanctions]
+            Q[silver_jse_listings]
+            R[silver_sarb_banks]
+        end
+        
+        subgraph Gold Layer - Business Logic
+            S[gold_sanctions_screening]
+            T[gold_company_risk_scores]
+            U[gold_transaction_summary]
         end
     end
 
-    subgraph Consumption
-        Q[Power BI Compliance Dashboard]
+    subgraph Real-Time & Consumption
+        V[KQL Database: live_transactions]
+        W[Power BI Compliance Dashboard]
     end
 
-    A -->|Data Factory Copy| E
-    B -->|Data Factory HTTP| F
-    C -->|Fabric Notebook PySpark| G
-    D -->|Python Simulator| O
+    A --> F --> J
+    B --> G --> K
+    C & D --> H --> L & M
+    E --> I --> V
     
-    E & F & G -->|Notebook: Clean & Validate| I & J & K
-    I & J & K -->|Notebook: Business Logic| L & M & N
-    P -.->|FICA Alert Queries| Q
-    L & M & N -->|Direct Lake / SQL Endpoint| Q
+    J & K & L & M -->|Notebooks: Clean & Validate| O & P & Q & R
+    O & P -->|Sanctions Screening| S
+    O & Q & R -->|Risk Scoring| T
+    V -->|Transaction Summary| U
+    S & T & U --> W
