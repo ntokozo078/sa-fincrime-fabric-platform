@@ -20,3 +20,7 @@ Thumbs.db
 
 # Data (Optional: Keep samples, but ignore huge raw dumps later)
 # data-samples/*.csv 
+# Secrets - never commit these
+.env
+*.env
+streaming/.env
